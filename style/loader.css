@@ -1,0 +1,65 @@
+body{
+    background:url(../img/3.jpg);
+    background-size: cover;
+}
+#loader{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    animation: outload 7s linear;
+    visibility: hidden;
+}
+.circular-progress-bar {
+    position: relative;
+    margin: 0 auto;
+}
+#all{
+    animation: bodyLoaded 7200ms linear;
+    position: absolute;
+    top:200px;
+    left:37%;
+
+}
+.progress-percentage,.progress-text{
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 0px 60px;
+}
+#patientez{
+    color: rgba(13, 126, 255, 0);
+    font-size: 70px;;
+}
+.progress-percentage {
+        font-size: 60px;
+        transform: translate(-50%, -85%);
+        color:rgb(209, 231, 231);
+        width: 100%;
+        top: 46%;
+}
+
+.progress-text{
+    transform: translate(-50%, 0%);
+    color: #c2b0b0;
+    top: 60%;
+    font-size: 21px;
+}
+@keyframes outload{
+    0%,99%{
+        visibility: visible;
+    }
+    100%{
+       display: none;
+       visibility: hidden;
+    }
+}
+@keyframes bodyLoaded{
+    0%,99%{
+       visibility: hidden; 
+       display: none;
+    }
+    100%{
+       visibility: visible; 
+    }
+}
