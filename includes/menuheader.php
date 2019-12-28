@@ -104,7 +104,7 @@
     </script>
   </head>
   <body>
-  <div class="ui inverted mini menu"  style="background:rgba(136, 79, 32, 0.815);font-size:15px; height: 42px;">
+  <div class="ui inverted mini menu fixed top"  style="background:rgba(136, 79, 32, 0.95);font-size:15px; height: 42px;">
     <div class=" item"><span class="lnr  lnr-database"  lnr-laptop-phone style="font-size: 30px;"></span>&nbsp;&nbsp;&nbsp;&nbsp; <span class="barnerName">Solid</span><span class="barnerName2">Memory</span></div>
     <div class="ui dropdown item">
         <span class=" lnr-phone-handset lnr"></span>&nbsp;&nbsp;Contacts&nbsp;&nbsp;&nbsp;&nbsp;
@@ -138,13 +138,18 @@
     </div>
     <div class="right menu">
       <form action="index.php" name="search">
-        <button type="submit" class="item" style="visibility: hidden; display: none; width: 0px; height:0px;"></button>
+        <button type="submit" class="item" style="visibility: hidden; display: none; width: 0px; height:0px; opacity:0;"></button>
           
       <div class="item" style="margin-top: -2px;">
         <div class="ui inverted icon input">
             <i class="search icon" style="color:white"></i>
-            <input type="text" placeholder="Search" style="background-color: rgba(146, 67, 3, 0.5); color:whitesmoke;">
+            <input type="text" placeholder="Search" style="background-color: rgba(255, 255, 255, 0.5); color:whitesmoke;">
             </div>
+            <style>
+            #mceu_58{
+              display:none;
+            }
+            </style>
         </form>
       </div>
         <div class="ui dropdown item">
