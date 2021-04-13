@@ -1,3 +1,4 @@
 /* No languages done yet
    project done on default languages
+Doing some Git and Github tutorials
 */
